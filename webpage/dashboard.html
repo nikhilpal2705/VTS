@@ -7,16 +7,18 @@
     <title>VLTS - Dashboard</title>
     <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="asset/css/dashboard.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
   </head>
   <body>
     
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-1 shadow">
   <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Vehicle Tracking System</a>
-  <div class="navbar-nav">
+  <div>
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6">Vehicle Tracking System</a>
+  </div>
+    <div class="navbar-nav">
     <div class="nav-item text-nowrap">
       <a type="button" class="nav-link px-3" onclick="logout()">Sign out</a>
     </div>
@@ -35,20 +37,20 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file" class="align-text-bottom"></span>
+            <a class="nav-link" href="adddriver.html">
+              <span data-feather="user-plus" class="align-text-bottom"></span>
               Add Drivers
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="shopping-cart" class="align-text-bottom"></span>
-              Edit Drivers
+            <a class="nav-link" href="viewdriverdetail.html">
+              <span data-feather="users" class="align-text-bottom"></span>
+              View Driver Details
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="users" class="align-text-bottom"></span>
+            <a class="nav-link" href="viewdriverlocation.html">
+              <span data-feather="map" class="align-text-bottom"></span>
               View Driver Location
             </a>
           </li>
@@ -100,5 +102,5 @@ https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 <!-- Our script must be loaded after firebase references -->
 <script src="asset/js/firebase.js"></script>
-<script src="asset/js/dashboard.js"></script>
+<script src="asset/js/script.js"></script>
 </html>
