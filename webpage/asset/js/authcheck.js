@@ -6,8 +6,7 @@ if (sessionStorage.getItem('AuthenticationState') === null) {
    //The user is authenticated and the authentication has not expired.
  }
 
- function logout() {
+function logout() {
 	sessionStorage.clear();
 	window.location.assign("index.html");
-
 }
